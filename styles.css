@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+}
+
+:root{
+    --color-principal: #FBF1CC;
+    --color-secundario: #8D4628;
+    --color-terciario: #D55E35;
+    --margin: 4rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    margin: var(--margin);
+}
+
+h1{
+    font-size: clamp(2rem, 5vw, 6rem);
+}
+h2{
+    font-size: clamp(1.5rem, 3.5vw,4.5rem);
+}
+h3{
+    font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+/* ================= NAV ================= */
+nav{
+    width: 20%;
+    text-align: right;
+    position: fixed;
+    right: var(--margin);
+}
+nav ul{
+    list-style: none;
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+
+/* ================= MAIN ================= */
+main{
+    height: 100vh;
+    width: 100%;
+}
+/* ================= PROYECTOS ================= */
+section.proyectos{
+    height: 100vh;
+}
+.proyectos-vista{
+    background-color: var(--color-terciario);
+    height: 70%;
+    width: 80%;
+    margin-top: 2rem;
+}
